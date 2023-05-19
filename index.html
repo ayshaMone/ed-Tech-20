@@ -1,0 +1,917 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN--LINK -->
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>EdTech%20</title>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+<!-- Main navigation container -->
+<section class="container mx-auto">
+    <nav
+  class="relative flex items-center justify-between w-full py-2 flex-nowrap text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+  data-te-navbar-ref>
+  <div class="flex flex-wrap items-center justify-between w-full px-3">
+    <!-- Hamburger button for mobile view -->
+    <button
+      class="block px-2 bg-transparent border-0 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+      type="button"
+      data-te-collapse-init
+      data-te-target="#navbarSupportedContent3"
+      aria-controls="navbarSupportedContent3"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <!-- Hamburger icon -->
+      <span class="[&>svg]:w-7">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-7 w-7">
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+
+    <!-- Collapsible navbar container -->
+    <div
+      class="!visible mt-2 hidden flex-grow basis-[100%] justify-between items-center lg:mt-0 lg:!flex lg:basis-auto"
+      id="navbarSupportedContent3"
+      data-te-collapse-item>
+      <!-- Navbar title -->
+      <a class="pl-5 pr-10 text-3xl font-bold text-black dark:text-neutral-200" href="#"
+        >Pro Edu</a
+      >
+      <!-- Left links -->
+      <ul
+        class="flex flex-col pl-0 list-style-none lg:flex-row"
+        data-te-navbar-nav-ref>
+        <!-- Home link -->
+        <li class="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 hover:font-bold dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            aria-current="page"
+            href="#"
+            data-te-nav-link-ref >Home</a>
+        </li>
+        <!-- Courses link -->
+        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 hover:font-bold dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref>Courses</a>
+        </li>
+        <!-- Deals link -->
+        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 hover:font-bold dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref > Deals </a>
+        </li>
+        <!-- Success link -->
+        <li class="lg:pr-2" data-te-nav-link-ref>
+          <a
+            class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 hover:font-bold dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400">Success </a>
+        </li>
+        <!-- About link -->
+        <li class="lg:pr-2" data-te-nav-link-ref>
+          <a
+            class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 hover:font-bold dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400">About</a>
+        </li>
+        <!-- Register link -->
+        <li class="lg:pr-2" data-te-nav-link-ref>
+          <a
+            class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 hover:font-bold dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"> Register
+        </a>
+        </li>
+      </ul>
+      <!-- Register -->
+      <div class="Register-area">
+        <a href="#" class="inline-block px-4 py-3 mt-4 font-bold leading-none border rounded text-1xl text-cyan-400 border-cyan-500 hover:border-transparent hover:text-cyan-500 hover:bg-white lg:mt-0">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</section>
+<div class="container mx-auto">
+  <div
+  id="carouselExampleCaptions"
+  class="relative"
+  data-te-carousel-init
+  data-te-carousel-slide>
+  <!--Carousel indicators-->
+<section class="">
+ <div class="py-30">
+  <div
+  class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+  data-te-carousel-indicators>
+  <button
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide-to="0"
+    data-te-carousel-active
+    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+    aria-current="true"
+    aria-label="Slide 1"></button>
+  <button
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide-to="1"
+    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+    aria-label="Slide 2"></button>
+  <button
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide-to="2"
+    class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+    aria-label="Slide 3"></button>
+</div>
+
+<!--Carousel items-->
+<div
+  class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+  <!--First item-->
+  <div
+    class="relative float-left -mr-[100%] w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none "
+    data-te-carousel-active
+    data-te-carousel-item
+    style="backface-visibility: hidden; height: 80vh">
+    <img
+      src="images/cover/cover-1.png" 
+      class="block w-full h-full"
+      alt="..." />
+    <div
+      class="container absolute top-0 left-0 flex items-center justify-center w-full h-full mx-auto text-center text-white">
+      <div class="">
+        <h2 class="py-5 text-6xl font-bold ">Get Started Digital  Learning
+          </h2>
+        <p>
+          It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layou
+        </p>
+       <div class="py-5">
+        <button class="px-5 py-3 text-2xl text-white bg-blue-500 rounded font-smiebold hover:bg-blue-700">
+          Get Started
+        </button>
+       </div>
+      </div>
+    </div>
+  </div>
+  <!--Second item-->
+  <div
+    class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+    data-te-carousel-item
+    style="backface-visibility: hidden; height: 80vh;">
+    <img
+      src="images/cover/cover-2.jpg" 
+      class="block w-full h-full"
+      alt="..." />
+      <div
+      class="container absolute top-0 left-0 flex items-center justify-center w-full h-full mx-auto text-center text-white">
+     <div> 
+      <h2 class="py-5 text-6xl font-bold ">Get Started Digital  Learning
+         </h2>
+         <p>
+          It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layou
+        </p>
+        <div class="py-5">
+          <button class="px-5 py-3 text-2xl text-white bg-blue-500 rounded font-smiebold hover:bg-blue-700">
+            Get Started
+          </button>
+         </div>
+    </div>
+    </div>
+  </div>
+  <!--Third item-->
+  <div
+    class=" relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+    data-te-carousel-item
+    style="backface-visibility: hidden; height: 80vh">
+    <img
+      src="images/cover/cover-3.jpg" 
+      class="block w-full h-full"
+      alt="..." />
+      <div
+      class="absolute top-0 left-0 flex items-center justify-center w-full h-full text-center text-white ">
+     <div>
+      <h2 class="py-5 text-6xl font-bold ">Get Started Digital 
+        Learning
+         </h2>
+       <p>
+         It is a long established fact that a reader will be distracted by the
+         content of a page when looking at its layou
+       </p>
+      <div class="py-5">
+       <button class="px-5 py-3 text-2xl text-white bg-blue-500 rounded font-smiebold hover:bg-blue-700">
+         Get Started
+       </button>
+     </div>
+    </div>
+  </div>
+ 
+  
+</div>
+
+
+<!--Carousel controls - prev item-->
+<button
+  class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+  type="button"
+  data-te-target="#carouselExampleCaptions"
+  data-te-slide="prev">
+  <span class="inline-block w-8 h-8">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </svg>
+  </span>
+  <span
+    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+    >Previous</span
+  >
+</button>
+<!--Carousel controls - next item-->
+<button
+  class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+  type="button"
+  data-te-target="#carouselExampleCaptions"
+  data-te-slide="next">
+  <span class="inline-block w-8 h-8">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+    </svg>
+  </span>
+  <span
+    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]" >Next</span >
+</button>
+</div>
+</section>
+</div>
+</div>
+ <!-- Discover Our Popular  -->
+<div class="pt-40 pb-10">
+  <div class="container mx-auto text-center">
+    <h2 class="text-6xl font-bold text-neutral-700">Discover Our Popular
+      Courses</h2>
+      <p >It is a long established fact that a reader will be distracted by the readable 
+        content of a page when looking at its layout.</p>
+   </div>
+</div>
+ <section class="container mx-auto">
+  <div class="grid grid-cols-2 ">
+    <!-- Discover---Our----Popular--1  -->
+    <div class="p-5 ">
+      <div class="flex bg-white shadow-lg">
+        <img src="images/course/course-1.png" alt="">
+        <div class="p-5 px-5 header-area">
+          <h3 class="text-xl font-bold">Fundamental Of UI/UX Design</h3>
+          <p>Some quick example text to build on the card title 
+            and make up the bulk of the card.</p>
+            <h4 class="text-2xl font-semibold text-cyan-500">Price : 20$</h4>
+        </div>
+      </div>
+    </div>
+    <!-- Discover---Our----Popular--2  -->
+    <div class="p-5 ">
+      <div class="flex bg-white shadow-lg">
+        <img src="images/course/course-2.png" class="" alt="">
+        <div class="p-5 px-5 header-area">
+          <h3 class="text-xl font-bold">Javascript Basic to advanced</h3>
+          <p>Some quick example text to build on the card title 
+            and make up the bulk of the card.</p>
+            <h4 class="text-2xl font-semibold text-cyan-500">Price : 20$</h4>
+        </div>
+       </div>
+    </div>
+     <!-- Discover---Our----Popular--3  -->
+     <div class="p-5 ">
+      <div class="flex bg-white shadow-lg">
+        <img src="images/course/course-3.png" alt="">
+        <div class="p-5 px-5 header-area">
+          <h3 class="text-xl font-bold">Fullstack Web Development</h3>
+          <p>Some quick example text to build on the card title 
+            and make up the bulk of the card.</p>
+            <h4 class="text-2xl font-semibold text-cyan-500">Price : 20$</h4>
+        </div>
+       </div>
+    </div>
+    <!-- Discover---Our----Popular--4 -->
+    <div class="p-5 ">
+      <div class="flex bg-white shadow-lg">
+        <img src="images/course/course-4.png" alt="">
+        <div class="p-5 px-5 header-area">
+          <h3 class="text-xl font-bold">Digital Marketing</h3>
+          <p>Some quick example text to build on the card title 
+            and make up the bulk of the card.</p>
+            <h4 class="text-2xl font-semibold text-cyan-500">Price : 20$</h4>
+        </div>
+       </div>
+    </div>
+    <!-- Discover---Our----Popular--5 -->
+    <div class="p-5 ">
+      <div class="flex bg-white shadow-lg">
+        <img src="images/course/course-5.png" alt="">
+        <div class="p-5 px-5 header-area">
+          <h3 class="text-xl font-bold">Photography Basic Rules</h3>
+          <p>Some quick example text to build on the card title 
+            and make up the bulk of the card.</p>
+            <h4 class="text-2xl font-semibold text-cyan-500">Price : 20$</h4>
+        </div>
+      </div>
+    </div>
+   <!-- Discover---Our----Popular--6 -->
+    <div class="p-5 ">
+      <div class="flex bg-white shadow-lg">
+        <img src="images/course/course-6.png" alt="">
+        <div class="p-5 px-5 header-area">
+          <h3 class="text-xl font-bold">Motion Graphics</h3>
+          <p>Some quick example text to build on the card title 
+            and make up the bulk of the card.</p>
+            <h4 class="text-2xl font-semibold text-cyan-500">Price : 20$</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center w-full py-5">
+    <button class="px-5 py-3 text-2xl text-white bg-blue-500 rounded font-smiebold hover:bg-blue-700">
+      See More Courses
+    </button>
+  </div>
+ </section>
+ <!-- Explore-The-elearning-Institute -->
+<section class="container mx-auto">
+  <div class="grid grid-cols-9 py-10 ">
+    <div class="col-span-4">
+      <img src="images/working.png" class="w-full" alt="">
+    </div>
+    <div class="col-span-5 p-10 bg-neutral-100">
+      <div class="">
+        <h2 class="pt-20 text-5xl font-bold ">Explore The elearning 
+          Institute </h2>
+          <p class="py-10">There are many variations of passages of Lorem Ipsum available, but the 
+            majority have suffered alteration in some form, by injected humour, or 
+            randomised words which don't look even slightly believable. If you are going 
+            to use a passage of Lorem Ipsum, you need to be sure.
+            Anything embarrassing hidden in the middle of text. All the Lorem Ipsum 
+            generators on the Internet tend to repeat predefined.</p>
+      </div>
+      <div class="flex ">
+        <div class="pe-4 ">
+          <h3 class="text-5xl font-bold">3.2K+</h3>
+          <p class="font-semibold">Online Course</p>
+        </div>
+        <div class="pe-4 ">
+          <h3 class="text-5xl font-bold">600+</h3>
+          <p class="font-semibold">Expert member</p>
+        </div>
+        <div class="pe-4 ">
+          <h3 class="text-5xl font-bold">1k+</h3>
+          <p class="font-semibold">Rating & Review</p>
+        </div>
+      </div>
+      <div class="py-5">
+        <button class="px-5 py-3 text-2xl text-white bg-blue-500 rounded font-smiebold hover:bg-blue-700">
+          Read More
+        </button>
+      </div>
+    </div>   
+  </div>
+</section>
+<!-- Ready to join -->
+<section class="container mx-auto">
+  <div class="pt-10 ">
+    <div class="flex justify-between p-10 text-white rounded bg-sky-500">
+      <div class="title-area">
+        <h2 class="pt-10 text-5xl font-bold">Ready to join?</h2>
+      <p class="py-5">It is a long established fact that a reader will be distracted by the 
+        readable content of a page when looking at its layout.</p>
+      </div>
+        <div class="py-20">
+          <button class="px-5 py-3 text-2xl bg-white rounded text-sky-500 font-smiebold hover:bg-blue-700 hover:text-white">
+            Register Now
+          </button>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- student-- header--Area -->
+<section class="container mx-auto">
+  <div class="pt-20">
+    <h2 class="text-5xl font-bold"> Meet Our Successfull Students
+    </h2>
+    <p class="pt-5">It is a long established fact that a reader will be distracted by the 
+      readable content of a page when looking at its layout.</p>
+      <!-- student--area -->
+      <div class="grid grid-cols-4 gap-6 py-10">
+        <div class="shadow-lg ">
+          <img src="images/Student/student-1.png" class="w-full" alt="">
+          <div class="p-5 student-name">
+            <h3 class="text-2xl font-semibold">Awlad Hossain</h3>
+            <p>UIUX Designer</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg ">
+          <img src="images/Student/student-2.png"class="w-full" alt="">
+          <div class="p-5 student-name">
+            <h3 class="text-2xl font-semibold">Jannatul Islam</h3>
+            <p>Motion Design</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg ">
+          <img src="images/Student/student-3.png" class="w-full" alt="">
+          <div class="p-5 student-name">
+        <h3 class="text-2xl font-semibold">Imran Hossain</h3>
+        <p>   Graphic Designer</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg ">
+          <img src="images/Student/student-4.png"class="w-full" alt="">
+          <div class="p-5 student-name">
+      <h3 class="text-2xl font-semibold">Nishi Akter</h3>
+      <p> Web Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center w-full py-5">
+        <button class="px-5 py-3 text-2xl text-white bg-blue-500 rounded font-smiebold hover:bg-blue-700">
+          View All
+        </button>
+      </div>
+  </div>
+</section>
+<!-- Feedback--Area -->
+<section class="container mx-auto">
+  <div class="pt-20 pb-10">
+    <div class="text-center ">
+      <h2 class="text-5xl font-bold">Some Students Feedback</h2>
+      <p>It is a long established fact that a reader will be distracted by the readable 
+        content of a page when looking at its layout.</p>
+    </div>
+  </div>
+</section>
+<!-- Set up your HTML -->
+  <!-- Swiper -->
+  <div class="container mx-auto">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+         <div class="p-10 shadow-lg ">
+          <div class="flex justify-between">
+            <div class="imag-area">
+              <img src="images/comma.png" alt="">
+             </div>
+             <!-- icon-area -->
+              <div class="flex ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+              </div>
+              <!-- icon-area -->
+              </div>
+          <p class="pt-5">There are many variations of passages of Lorem Ipsum available, but 
+            the majority have suffered alteration in some form, by injected 
+            humour, or randomised words which don't look even slightly 
+            believable. If you are going to use a passage of Lorem</p>
+           <div class="flex "> 
+            <div class="w-20 pt-5 img-area">
+              <img class="w-full" src="images/student/student-5.png" alt="">
+            </div>
+           <div class="p-5">
+            <h2 class="text-2xl font-semibold">Awlad Hossain</h2>
+            <p>UI Designer</p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-10 shadow-lg ">
+            <div class="flex justify-between">
+              <div class="imag-area">
+                <img src="images/comma.png" alt="">
+               </div>
+               <!-- icon-area -->
+                <div class="flex ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                </div>
+                <!-- icon-area -->
+                </div>
+            <p class="pt-5">There are many variations of passages of Lorem Ipsum available, but 
+              the majority have suffered alteration in some form, by injected 
+              humour, or randomised words which don't look even slightly 
+              believable. If you are going to use a passage of Lorem</p>
+             <div class="flex "> 
+              <div class="w-20 pt-5 img-area">
+                <img class="w-full" src="images/student/student-6.png" alt="">
+              </div>
+             <div class="p-5">
+              <h2 class="text-2xl font-semibold">Shanta Akter</h2>
+              <p>Graphic Designer</p>
+             </div>
+            </div>
+           </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-10 shadow-lg ">
+            <div class="flex justify-between">
+              <div class="imag-area">
+                <img src="images/comma.png" alt="">
+               </div>
+               <!-- icon-area -->
+                <div class="flex ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                </div>
+                <!-- icon-area -->
+                </div>
+            <p class="pt-5">There are many variations of passages of Lorem Ipsum available, but 
+              the majority have suffered alteration in some form, by injected 
+              humour, or randomised words which don't look even slightly 
+              believable. If you are going to use a passage of Lorem</p>
+             <div class="flex "> 
+              <div class="w-20 pt-5 img-area">
+                <img class="w-full" src="images/student/student-4.png" alt="">
+              </div>
+             <div class="p-5">
+              <h2 class="text-2xl font-semibold">Nishi Akter
+                </h2>
+              <p>Web Developer</p>
+             </div>
+            </div>
+           </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-10 shadow-lg ">
+            <div class="flex justify-between">
+              <div class="imag-area">
+                <img src="images/comma.png" alt="">
+               </div>
+               <!-- icon-area -->
+                <div class="flex ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                </div>
+                <!-- icon-area -->
+                </div>
+            <p class="pt-5">There are many variations of passages of Lorem Ipsum available, but 
+              the majority have suffered alteration in some form, by injected 
+              humour, or randomised words which don't look even slightly 
+              believable. If you are going to use a passage of Lorem</p>
+             <div class="flex "> 
+              <div class="w-20 pt-5 img-area">
+                <img class="w-full" src="images/student/student-3.png" alt="">
+              </div>
+             <div class="p-5">
+              <h2 class="text-2xl font-semibold">Imran Hossain
+               </h2>
+              <p> Graphic Designer</p>
+             </div>
+            </div>
+           </div>
+        </div>
+       
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+</div>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<!-- Questions--area -->
+<section class="container mx-auto">
+  <div class="pt-20">
+    <div class="pb-20 text-center Questions-area-title">
+      <h2 class="text-5xl font-bold">
+        Frequently Asked Questions
+      </h2>
+      <p class="pt-3" >It is a long established fact that a reader will be distracted by the readable 
+        content of a page when looking at its layout.</p>
+    </div>
+  </div>
+  <div id="accordionExample">
+    <div class="p-3">
+      <div
+      class="bg-white border rounded-t-lg border-neutral-200 dark:border-neutral-600 dark:bg-neutral-800">
+      <h2 class="mb-0" id="headingOne">
+        <button
+          class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+          type="button"
+          data-te-collapse-init
+          data-te-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne">
+          <h2 class="text-2xl font-bold ">
+            What other services are you compatible with?
+          </h2>
+          <span
+            class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="!visible"
+        data-te-collapse-item
+        data-te-collapse-show
+        aria-labelledby="headingOne"
+        data-te-parent="#accordionExample">
+        <div class="px-5 py-4">
+         <p>There are many variations of passages of available, but the majority have suffered alteration in 
+          some form, by injected humour, or randomised words which don't look even slightly believable. If 
+          you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+          embarrassing hidden in the middle of text. All the generators on the</p>
+        </div>
+      </div>
+    </div>
+    </div>
+   <div class="p-3">
+    <div
+    class="bg-white border border-t-0 border-neutral-200 dark:border-neutral-600 dark:bg-neutral-800">
+    <h2 class="mb-0" id="headingTwo">
+      <button
+        class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+        type="button"
+        data-te-collapse-init
+        data-te-collapse-collapsed
+        data-te-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo">
+        <h2 class="text-2xl font-bold ">
+          I have a technical i need resolved, who do i email?
+        </h2>
+        <span
+          class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      class="!visible hidden"
+      data-te-collapse-item
+      aria-labelledby="headingTwo"
+      data-te-parent="#accordionExample">
+      <div class="px-5 py-4">
+        <p>There are many variations of passages of available, but the majority have suffered alteration in 
+          some form, by injected humour, or randomised words which don't look even slightly believable. If 
+          you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+          embarrassing hidden in the middle of text. All the generators on the</p>
+      </div>
+    </div>
+  </div>
+   </div>
+  <div class="p-3">
+    <div
+    class="bg-white border border-t-0 rounded-b-lg border-neutral-200 dark:border-neutral-600 dark:bg-neutral-800">
+    <h2 class="mb-0 accordion-header" id="headingThree">
+      <button
+        class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+        type="button"
+        data-te-collapse-init
+        data-te-collapse-collapsed
+        data-te-target="#collapseThree"
+        aria-expanded="false"
+        aria-controls="collapseThree">
+        <h2 class="text-2xl font-bold ">
+          What other services are you compatible with?
+        </h2>
+        <span
+          class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </button>
+    </h2>
+    <div
+      id="collapseThree"
+      class="!visible hidden"
+      data-te-collapse-item
+      aria-labelledby="headingThree"
+      data-te-parent="#accordionExample">
+      <div class="px-5 py-4">
+       <p>There are many variations of passages of available, but the majority have suffered alteration in 
+        some form, by injected humour, or randomised words which don't look even slightly believable. If 
+        you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+        embarrassing hidden in the middle of text. All the generators on the</p>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="p-3">
+      <div
+      class="bg-white border border-t-0 rounded-b-lg border-neutral-200 dark:border-neutral-600 dark:bg-neutral-800">
+      <h2 class="mb-0 accordion-header" id="headingfour">
+        <button
+          class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+          type="button"
+          data-te-collapse-init
+          data-te-collapse-collapsed
+          data-te-target="#collapsefour"
+          aria-expanded="false"
+          aria-controls="collapsefour">
+          <h2 class="text-2xl font-bold ">
+            What other services are you compatible with?
+          </h2>
+          <span
+            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
+      <div
+        id="collapsefour"
+        class="!visible hidden"
+        data-te-collapse-item
+        aria-labelledby="headingfour"
+        data-te-parent="#accordionExample">
+        <div class="px-5 py-4">
+         <p>There are many variations of passages of available, but the majority have suffered alteration in 
+          some form, by injected humour, or randomised words which don't look even slightly believable. If 
+          you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+          embarrassing hidden in the middle of text. All the generators on the</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- companies---area -->
+<section class="container mx-auto">
+  <div class="companies-title">
+    <h2 class="pt-20 text-5xl font-bold text-center">Trusted by over 800+ companies</h2>
+    <div class="flex justify-between pt-10 image-area ">
+      <img src="images/company/company-1.png" alt="">
+      <img src="images/company/company-2.png" alt="">
+      <img src="images/company/company-3.png" alt="">
+      <img src="images/company/company-4.png" alt="">
+      <img src="images/company/company-5.png" alt="">
+      <img src="images/company/company-6.png" alt="">
+    </div>
+  </div>
+</section>
+<!-- footer--area -->
+<footer class="pt-20">
+  <section class="p-20 bg-black" >
+    <div class="text-center text-white footer-title">
+      <h2 class="text-4xl font-bold ">Pro Edu</h2>
+      <p>Office 41, Zawaya Buildin, Ghala Muscat, <br> Sultanate of Oman</p>
+      <p>Privacy Ploicy | Terms of use</p>
+      <!-- icon-area -->
+     <div class="pt-5">
+      <i class="p-2 fa-brands fa-facebook"></i>
+      <i class="p-2 fa-brands fa-twitter"></i>
+      <i class="p-2 fa-brands fa-linkedin"></i>
+      <i class="p-2 fa-brands fa-tiktok"></i>
+     </div>
+    </div>
+  </section>
+</footer>
+<script src="https://kit.fontawesome.com/0c7540f235.js" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+</body>
+</html>
