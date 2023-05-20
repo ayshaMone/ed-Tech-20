@@ -666,6 +666,10 @@
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+      },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -882,14 +886,77 @@
 <section class="container mx-auto">
   <div class="companies-title">
     <h2 class="pt-20 text-5xl font-bold text-center">Trusted by over 800+ companies</h2>
-    <div class="flex justify-between pt-10 image-area ">
+      <!-- Swiper -->
+  <div class="py-10 swiper mySwiper2">
+    <div class="swiper-wrapper">   
+      <div class="swiper-slide">
+        <img src="images/company/Alibaba.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Amazon.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Daraz.pk Logo.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Ebay.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Rakuten.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Walmart.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Walmart.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Walmart.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Walmart.svg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/company/Target.svg" alt="">
+      </div>
+ 
+    </div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: true,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+    <!-- <div class="flex justify-between pt-10 image-area ">
       <img src="images/company/company-1.png" alt="">
       <img src="images/company/company-2.png" alt="">
       <img src="images/company/company-3.png" alt="">
       <img src="images/company/company-4.png" alt="">
       <img src="images/company/company-5.png" alt="">
       <img src="images/company/company-6.png" alt="">
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- footer--area -->
